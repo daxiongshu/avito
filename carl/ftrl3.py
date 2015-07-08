@@ -1,20 +1,3 @@
-'''
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                   Version 2, December 2004
-
-Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
-
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
-
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
- 0. You just DO WHAT THE FUCK YOU WANT TO.
-'''
-
-
 from datetime import datetime
 from csv import DictReader
 from math import exp, log, sqrt
@@ -29,7 +12,8 @@ from math import exp, log, sqrt
 ##############################################################################
 
 # A, paths
-train='../explore/train_ads_search.tsv'
+train='../explore/train_ads_search.tsv' # combined tsv from trainStream, Adsinfo and Searchinfo. 
+#only keep the first 20,000,000 lines of the trainStream.tsv
 test='../explore/test_ads_search.tsv'
 submission = 'ftrl3.csv'  # path of to be outputted submission file
 
